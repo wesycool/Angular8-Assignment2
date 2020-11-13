@@ -2,7 +2,7 @@
 
 <!--Beginning  2 buttons. One for "Start Game" and other for "Pause Game"-->
 <div id='game-control'>
-  <app-game-control></app-game-control>
+  <app-game-control (intervalFired)="onIntervalFired($event)"></app-game-control>
 </div>
 <!--End  2 buttons. One for "Start Game" and other for "Pause Game"-->
 
@@ -10,7 +10,8 @@
  <!-- Beginning app-game-control click event for intervalFired for method onIntervalFired-->
   <div class="row">
     <div class="col-xs-12">
-
+      <!-- <app-odd [odd]="odd"></app-odd>
+      <app-even [even]="even"></app-even> -->
     </div>
   </div>
   <!-- End app-game-control click event for intervalFired for method onIntervalFired-->
