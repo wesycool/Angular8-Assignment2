@@ -1,10 +1,10 @@
 import {Component, Input} from "@angular/core";
 
 @Component({
-    selector:'app-odd',
-    template:'<p>{{odd}}</p>'
+    selector:'app-odd-numbers',
+    template:'<p style="color: blue">Odd - {{oddNumber}}</p>'
 })
 
 export class OddComponent{
-    @Input() odd: Number;
+    @Input() oddNumber: number
 }

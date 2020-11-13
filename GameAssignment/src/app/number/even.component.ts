@@ -1,10 +1,10 @@
 import {Component, Input} from "@angular/core";
 
 @Component({
-    selector:'app-even',
-    template:'<p>{{even}}</p>'
+    selector:'app-even-numbers',
+    template:'<p style="color: green">Even - {{evenNumber}}</p>'
 })
 
 export class EvenComponent{
-    @Input() even: Number;
+    @Input() evenNumber: number
 }

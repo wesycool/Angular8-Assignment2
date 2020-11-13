@@ -10,8 +10,8 @@
  <!-- Beginning app-game-control click event for intervalFired for method onIntervalFired-->
   <div class="row">
     <div class="col-xs-12">
-      <!-- <app-odd [odd]="odd"></app-odd>
-      <app-even [even]="even"></app-even> -->
+        <app-odd-numbers *ngFor="let odd of oddNumbers" [oddNumber]='odd'></app-odd-numbers>
+        <app-even-numbers *ngFor="let even of evenNumbers" [evenNumber]='even'></app-even-numbers>
     </div>
   </div>
   <!-- End app-game-control click event for intervalFired for method onIntervalFired-->
